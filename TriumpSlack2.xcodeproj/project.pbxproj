@@ -8,11 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		5C889E201AE2211D00661DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C889E1F1AE2211D00661DC0 /* AppDelegate.swift */; };
-		5C889E221AE2211D00661DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C889E211AE2211D00661DC0 /* ViewController.swift */; };
 		5C889E251AE2211D00661DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C889E231AE2211D00661DC0 /* Main.storyboard */; };
 		5C889E271AE2211D00661DC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C889E261AE2211D00661DC0 /* Images.xcassets */; };
 		5C889E2A1AE2211D00661DC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C889E281AE2211D00661DC0 /* LaunchScreen.xib */; };
 		5C889E361AE2211D00661DC0 /* TriumpSlack2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C889E351AE2211D00661DC0 /* TriumpSlack2Tests.swift */; };
+		5C889E401AE2217700661DC0 /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C889E3F1AE2217700661DC0 /* Sinch.framework */; };
+		5C889E451AE222EB00661DC0 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C889E441AE222EB00661DC0 /* CallViewController.swift */; };
+		5C889E521AE226FD00661DC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C889E511AE226FD00661DC0 /* Foundation.framework */; };
+		5C889E541AE2276C00661DC0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C889E531AE2276C00661DC0 /* AudioToolbox.framework */; };
+		5C889E561AE2277600661DC0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C889E551AE2277600661DC0 /* Security.framework */; };
+		5C889E581AE2278600661DC0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C889E571AE2278600661DC0 /* AVFoundation.framework */; };
+		5CC2154C1AE22C88005849F3 /* bg_drop-shadow_320x430@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2153C1AE22C88005849F3 /* bg_drop-shadow_320x430@2x.png */; };
+		5CC2154D1AE22C88005849F3 /* bg_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2153D1AE22C88005849F3 /* bg_shadow@2x.png */; };
+		5CC2154E1AE22C88005849F3 /* big_red_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2153E1AE22C88005849F3 /* big_red_normal.png */; };
+		5CC2154F1AE22C88005849F3 /* big_red_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2153F1AE22C88005849F3 /* big_red_pressed.png */; };
+		5CC215501AE22C88005849F3 /* Call_bg-320x305@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215401AE22C88005849F3 /* Call_bg-320x305@2x.png */; };
+		5CC215511AE22C88005849F3 /* call_btn_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215411AE22C88005849F3 /* call_btn_normal@2x.png */; };
+		5CC215521AE22C88005849F3 /* callbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215421AE22C88005849F3 /* callbg.png */; };
+		5CC215531AE22C88005849F3 /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215431AE22C88005849F3 /* incoming.wav */; };
+		5CC215541AE22C88005849F3 /* Login_btn_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215441AE22C88005849F3 /* Login_btn_normal@2x.png */; };
+		5CC215551AE22C88005849F3 /* Login_btn_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215451AE22C88005849F3 /* Login_btn_pressed@2x.png */; };
+		5CC215561AE22C88005849F3 /* logo-297x142@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215461AE22C88005849F3 /* logo-297x142@2x.png */; };
+		5CC215571AE22C88005849F3 /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215471AE22C88005849F3 /* ringback.wav */; };
+		5CC215581AE22C88005849F3 /* small_green_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215481AE22C88005849F3 /* small_green_normal.png */; };
+		5CC215591AE22C88005849F3 /* small_green_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC215491AE22C88005849F3 /* small_green_pressed.png */; };
+		5CC2155A1AE22C88005849F3 /* small_red_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2154A1AE22C88005849F3 /* small_red_normal.png */; };
+		5CC2155B1AE22C88005849F3 /* small_red_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2154B1AE22C88005849F3 /* small_red_pressed.png */; };
+		5CC2155D1AE22CC8005849F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2155C1AE22CC8005849F3 /* ViewController.swift */; };
+		5CC2155F1AE22E2C005849F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2155E1AE22E2C005849F3 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +52,37 @@
 		5C889E1A1AE2211D00661DC0 /* TriumpSlack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriumpSlack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C889E1E1AE2211D00661DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C889E1F1AE2211D00661DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C889E211AE2211D00661DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C889E241AE2211D00661DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C889E261AE2211D00661DC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5C889E291AE2211D00661DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5C889E2F1AE2211D00661DC0 /* TriumpSlack2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriumpSlack2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C889E341AE2211D00661DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C889E351AE2211D00661DC0 /* TriumpSlack2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriumpSlack2Tests.swift; sourceTree = "<group>"; };
+		5C889E3F1AE2217700661DC0 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sinch.framework; path = ../../Downloads/Sinch/Sinch.framework; sourceTree = "<group>"; };
+		5C889E411AE2218C00661DC0 /* TriumpSlack2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TriumpSlack2-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C889E441AE222EB00661DC0 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		5C889E511AE226FD00661DC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5C889E531AE2276C00661DC0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5C889E551AE2277600661DC0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5C889E571AE2278600661DC0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5CC2153C1AE22C88005849F3 /* bg_drop-shadow_320x430@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_drop-shadow_320x430@2x.png"; sourceTree = "<group>"; };
+		5CC2153D1AE22C88005849F3 /* bg_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_shadow@2x.png"; sourceTree = "<group>"; };
+		5CC2153E1AE22C88005849F3 /* big_red_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big_red_normal.png; sourceTree = "<group>"; };
+		5CC2153F1AE22C88005849F3 /* big_red_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big_red_pressed.png; sourceTree = "<group>"; };
+		5CC215401AE22C88005849F3 /* Call_bg-320x305@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Call_bg-320x305@2x.png"; sourceTree = "<group>"; };
+		5CC215411AE22C88005849F3 /* call_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_btn_normal@2x.png"; sourceTree = "<group>"; };
+		5CC215421AE22C88005849F3 /* callbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callbg.png; sourceTree = "<group>"; };
+		5CC215431AE22C88005849F3 /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
+		5CC215441AE22C88005849F3 /* Login_btn_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login_btn_normal@2x.png"; sourceTree = "<group>"; };
+		5CC215451AE22C88005849F3 /* Login_btn_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login_btn_pressed@2x.png"; sourceTree = "<group>"; };
+		5CC215461AE22C88005849F3 /* logo-297x142@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-297x142@2x.png"; sourceTree = "<group>"; };
+		5CC215471AE22C88005849F3 /* ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringback.wav; sourceTree = "<group>"; };
+		5CC215481AE22C88005849F3 /* small_green_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_green_normal.png; sourceTree = "<group>"; };
+		5CC215491AE22C88005849F3 /* small_green_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_green_pressed.png; sourceTree = "<group>"; };
+		5CC2154A1AE22C88005849F3 /* small_red_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_red_normal.png; sourceTree = "<group>"; };
+		5CC2154B1AE22C88005849F3 /* small_red_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_red_pressed.png; sourceTree = "<group>"; };
+		5CC2155C1AE22CC8005849F3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CC2155E1AE22E2C005849F3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +90,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C889E581AE2278600661DC0 /* AVFoundation.framework in Frameworks */,
+				5C889E561AE2277600661DC0 /* Security.framework in Frameworks */,
+				5C889E541AE2276C00661DC0 /* AudioToolbox.framework in Frameworks */,
+				5C889E521AE226FD00661DC0 /* Foundation.framework in Frameworks */,
+				5C889E401AE2217700661DC0 /* Sinch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +111,11 @@
 		5C889E111AE2211D00661DC0 = {
 			isa = PBXGroup;
 			children = (
+				5C889E571AE2278600661DC0 /* AVFoundation.framework */,
+				5C889E551AE2277600661DC0 /* Security.framework */,
+				5C889E531AE2276C00661DC0 /* AudioToolbox.framework */,
+				5C889E511AE226FD00661DC0 /* Foundation.framework */,
+				5C889E3F1AE2217700661DC0 /* Sinch.framework */,
 				5C889E1C1AE2211D00661DC0 /* TriumpSlack2 */,
 				5C889E321AE2211D00661DC0 /* TriumpSlack2Tests */,
 				5C889E1B1AE2211D00661DC0 /* Products */,
@@ -77,12 +134,16 @@
 		5C889E1C1AE2211D00661DC0 /* TriumpSlack2 */ = {
 			isa = PBXGroup;
 			children = (
+				5CC2153B1AE22C68005849F3 /* Resources */,
 				5C889E1F1AE2211D00661DC0 /* AppDelegate.swift */,
-				5C889E211AE2211D00661DC0 /* ViewController.swift */,
+				5CC2155C1AE22CC8005849F3 /* ViewController.swift */,
+				5CC2155E1AE22E2C005849F3 /* MainViewController.swift */,
 				5C889E231AE2211D00661DC0 /* Main.storyboard */,
 				5C889E261AE2211D00661DC0 /* Images.xcassets */,
 				5C889E281AE2211D00661DC0 /* LaunchScreen.xib */,
 				5C889E1D1AE2211D00661DC0 /* Supporting Files */,
+				5C889E411AE2218C00661DC0 /* TriumpSlack2-Bridging-Header.h */,
+				5C889E441AE222EB00661DC0 /* CallViewController.swift */,
 			);
 			path = TriumpSlack2;
 			sourceTree = "<group>";
@@ -110,6 +171,29 @@
 				5C889E341AE2211D00661DC0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CC2153B1AE22C68005849F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5CC2153C1AE22C88005849F3 /* bg_drop-shadow_320x430@2x.png */,
+				5CC2153D1AE22C88005849F3 /* bg_shadow@2x.png */,
+				5CC2153E1AE22C88005849F3 /* big_red_normal.png */,
+				5CC2153F1AE22C88005849F3 /* big_red_pressed.png */,
+				5CC215401AE22C88005849F3 /* Call_bg-320x305@2x.png */,
+				5CC215411AE22C88005849F3 /* call_btn_normal@2x.png */,
+				5CC215421AE22C88005849F3 /* callbg.png */,
+				5CC215431AE22C88005849F3 /* incoming.wav */,
+				5CC215441AE22C88005849F3 /* Login_btn_normal@2x.png */,
+				5CC215451AE22C88005849F3 /* Login_btn_pressed@2x.png */,
+				5CC215461AE22C88005849F3 /* logo-297x142@2x.png */,
+				5CC215471AE22C88005849F3 /* ringback.wav */,
+				5CC215481AE22C88005849F3 /* small_green_normal.png */,
+				5CC215491AE22C88005849F3 /* small_green_pressed.png */,
+				5CC2154A1AE22C88005849F3 /* small_red_normal.png */,
+				5CC2154B1AE22C88005849F3 /* small_red_pressed.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +245,7 @@
 				TargetAttributes = {
 					5C889E191AE2211D00661DC0 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = FR86VC7DU7;
 					};
 					5C889E2E1AE2211D00661DC0 = {
 						CreatedOnToolsVersion = 6.3;
@@ -193,6 +278,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C889E251AE2211D00661DC0 /* Main.storyboard in Resources */,
+				5CC215501AE22C88005849F3 /* Call_bg-320x305@2x.png in Resources */,
+				5CC2154F1AE22C88005849F3 /* big_red_pressed.png in Resources */,
+				5CC215531AE22C88005849F3 /* incoming.wav in Resources */,
+				5CC215511AE22C88005849F3 /* call_btn_normal@2x.png in Resources */,
+				5CC2155B1AE22C88005849F3 /* small_red_pressed.png in Resources */,
+				5CC215521AE22C88005849F3 /* callbg.png in Resources */,
+				5CC2154E1AE22C88005849F3 /* big_red_normal.png in Resources */,
+				5CC2154C1AE22C88005849F3 /* bg_drop-shadow_320x430@2x.png in Resources */,
+				5CC215541AE22C88005849F3 /* Login_btn_normal@2x.png in Resources */,
+				5CC215561AE22C88005849F3 /* logo-297x142@2x.png in Resources */,
+				5CC215591AE22C88005849F3 /* small_green_pressed.png in Resources */,
+				5CC215581AE22C88005849F3 /* small_green_normal.png in Resources */,
+				5CC2155A1AE22C88005849F3 /* small_red_normal.png in Resources */,
+				5CC2154D1AE22C88005849F3 /* bg_shadow@2x.png in Resources */,
+				5CC215551AE22C88005849F3 /* Login_btn_pressed@2x.png in Resources */,
+				5CC215571AE22C88005849F3 /* ringback.wav in Resources */,
 				5C889E2A1AE2211D00661DC0 /* LaunchScreen.xib in Resources */,
 				5C889E271AE2211D00661DC0 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C889E221AE2211D00661DC0 /* ViewController.swift in Sources */,
+				5CC2155D1AE22CC8005849F3 /* ViewController.swift in Sources */,
+				5C889E451AE222EB00661DC0 /* CallViewController.swift in Sources */,
 				5C889E201AE2211D00661DC0 /* AppDelegate.swift in Sources */,
+				5CC2155F1AE22E2C005849F3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +443,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/aahmed/Downloads/Sinch,
+				);
 				INFOPLIST_FILE = TriumpSlack2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-Xlinker",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TriumpSlack2/TriumpSlack2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +467,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/aahmed/Downloads/Sinch,
+				);
 				INFOPLIST_FILE = TriumpSlack2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-Xlinker",
+					"-lc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TriumpSlack2/TriumpSlack2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +539,7 @@
 				5C889E3B1AE2211D00661DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C889E3C1AE2211D00661DC0 /* Build configuration list for PBXNativeTarget "TriumpSlack2Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +548,7 @@
 				5C889E3E1AE2211D00661DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
