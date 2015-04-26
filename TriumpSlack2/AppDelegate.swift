@@ -8,9 +8,10 @@
 
 import UIKit
 import Foundation
+import PushKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate, PKPushRegistryDelegate {
 
     var window: UIWindow?
     var client: SINClient?
@@ -28,6 +29,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
         NSLog("client did fail", error.description)
         let toast = UIAlertView(title: "Failed to start", message: error.description, delegate: nil, cancelButtonTitle: "OK")
         toast.show()
+    }
+    
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        
+        var type = UIUserNotificationType.Badge | UIUserNotificationType.Alert | UIUserNotificationType.Sound;
+        var setting = UIUserNotificationSettings(forTypes: type, categories: nil);
+        UIApplication.sharedApplication().registerUserNotificationSettings(setting);
+        UIApplication.sharedApplication().registerForRemoteNotifications();
+        
+        return true
+    }
+    
+    func application(application: UIApplication,
+        didFailToRegisterForRemoteNotificationsWithError error: NSError){
+            println(error.localizedDescription)
+            println("could not register: \(error)")
+            
+    }
+    
+    func application(application: UIApplication,
+        didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+            
+            /* Each byte in the data will be translated to its hex value like 0x01 or
+            0xAB excluding the 0x part, so for 1 byte, we will need 2 characters to
+            represent that byte, hence the * 2 */
+            var tokenAsString = NSMutableString()
+            
+            /* Create a buffer of UInt8 values and then get the raw bytes
+            of the device token into this buffer */
+            var byteBuffer = [UInt8](count: deviceToken.length, repeatedValue: 0x00)
+            deviceToken.getBytes(&byteBuffer)
+            
+            /* Now convert the bytes into their hex equivalent */
+            for byte in byteBuffer{
+                tokenAsString.appendFormat("%02hhX", byte)
+            }
+            
+            println("Token = \(tokenAsString)")
+            
     }
     
     func handleLocalNotification(notification: UILocalNotification) {
@@ -79,11 +120,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
         self.window!.addSubview(splash!)
     }
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

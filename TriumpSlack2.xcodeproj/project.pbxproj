@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C866F501AEC3977008735F3 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C866F4F1AEC3977008735F3 /* PushKit.framework */; };
 		5C889E201AE2211D00661DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C889E1F1AE2211D00661DC0 /* AppDelegate.swift */; };
 		5C889E251AE2211D00661DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C889E231AE2211D00661DC0 /* Main.storyboard */; };
 		5C889E271AE2211D00661DC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C889E261AE2211D00661DC0 /* Images.xcassets */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C866F4F1AEC3977008735F3 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
 		5C889E1A1AE2211D00661DC0 /* TriumpSlack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriumpSlack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C889E1E1AE2211D00661DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C889E1F1AE2211D00661DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C866F501AEC3977008735F3 /* PushKit.framework in Frameworks */,
 				5C889E581AE2278600661DC0 /* AVFoundation.framework in Frameworks */,
 				5C889E561AE2277600661DC0 /* Security.framework in Frameworks */,
 				5C889E541AE2276C00661DC0 /* AudioToolbox.framework in Frameworks */,
@@ -111,6 +114,7 @@
 		5C889E111AE2211D00661DC0 = {
 			isa = PBXGroup;
 			children = (
+				5C866F4F1AEC3977008735F3 /* PushKit.framework */,
 				5C889E571AE2278600661DC0 /* AVFoundation.framework */,
 				5C889E551AE2277600661DC0 /* Security.framework */,
 				5C889E531AE2276C00661DC0 /* AudioToolbox.framework */,
@@ -246,6 +250,11 @@
 					5C889E191AE2211D00661DC0 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = FR86VC7DU7;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					5C889E2E1AE2211D00661DC0 = {
 						CreatedOnToolsVersion = 6.3;
@@ -445,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/aahmed/Downloads/Sinch,
@@ -458,6 +468,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "640494ed-bc0f-4f1f-bb1a-4d1570b3e091";
 				SWIFT_OBJC_BRIDGING_HEADER = "TriumpSlack2/TriumpSlack2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -469,6 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/aahmed/Downloads/Sinch,
@@ -482,6 +494,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "640494ed-bc0f-4f1f-bb1a-4d1570b3e091";
 				SWIFT_OBJC_BRIDGING_HEADER = "TriumpSlack2/TriumpSlack2-Bridging-Header.h";
 			};
 			name = Release;
