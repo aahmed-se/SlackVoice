@@ -11,7 +11,7 @@ import Foundation
 import PushKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate, PKPushRegistryDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
 
     var window: UIWindow?
     var client: SINClient?
