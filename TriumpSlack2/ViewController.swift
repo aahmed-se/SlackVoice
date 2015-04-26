@@ -25,22 +25,17 @@ import UIKit
 
 class ViewController: UIViewController {
                             
-  @IBOutlet var nameTextField: UITextField!
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    nameTextField.becomeFirstResponder()
-  }
 
-  @IBAction func onLoginButtonPressed(sender: AnyObject) {
-    if nameTextField.text.isEmpty {
-      return
-    } else {
-      let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-      appDelegate.createSinchClient(nameTextField.text)
-      super.performSegueWithIdentifier("mainView", sender: nil);
-    }
   }
+    
+//  func prepCall() {
+//      let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//      appDelegate.createSinchClient("svshenoy")
+//      super.performSegueWithIdentifier("mainView", sender: nil);
+    
+//  }
 
 }
 

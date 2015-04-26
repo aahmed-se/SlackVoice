@@ -61,7 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
             of the device token into this buffer */
             var byteBuffer = [UInt8](count: deviceToken.length, repeatedValue: 0x00)
             deviceToken.getBytes(&byteBuffer)
-            
             /* Now convert the bytes into their hex equivalent */
             for byte in byteBuffer{
                 tokenAsString.appendFormat("%02hhX", byte)
@@ -69,6 +68,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
             
             println("Token = \(tokenAsString)")
             
+    }
+
+    
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        println("didReceiveRemoteNotification")
+        //Navigate to rootviewcontroller
+        var rootViewController = self.window!.rootViewController
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var setViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Beta") as! MainViewController
+        
+        //rootViewController?.navigationController?.popToViewController(setViewController, animated: false)
+        
+        rootViewController?.presentViewController(setViewController, animated: false, completion: nil)
+        
+        //setViewController.prepCall()
+        
+        //setViewController.call()
+        
+        //rootViewController!.navigationController!.popToViewController(setViewController, animated: false)
     }
     
     func handleLocalNotification(notification: UILocalNotification) {

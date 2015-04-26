@@ -51,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		5C866F4F1AEC3977008735F3 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		5C866F511AEC9533008735F3 /* SinchCallingUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SinchCallingUIKit.framework; path = ../SinchCallingUIKit/SinchCallingUIKit/Release/SinchCallingUIKit.framework; sourceTree = "<group>"; };
 		5C889E1A1AE2211D00661DC0 /* TriumpSlack2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriumpSlack2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C889E1E1AE2211D00661DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C889E1F1AE2211D00661DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		5C889E111AE2211D00661DC0 = {
 			isa = PBXGroup;
 			children = (
+				5C866F511AEC9533008735F3 /* SinchCallingUIKit.framework */,
 				5C866F4F1AEC3977008735F3 /* PushKit.framework */,
 				5C889E571AE2278600661DC0 /* AVFoundation.framework */,
 				5C889E551AE2277600661DC0 /* Security.framework */,
@@ -458,6 +460,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/aahmed/Downloads/Sinch,
+					/Users/aahmed/workspace/SinchCallingUIKit/SinchCallingUIKit/Release,
 				);
 				INFOPLIST_FILE = TriumpSlack2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -484,6 +487,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/aahmed/Downloads/Sinch,
+					/Users/aahmed/workspace/SinchCallingUIKit/SinchCallingUIKit/Release,
 				);
 				INFOPLIST_FILE = TriumpSlack2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;

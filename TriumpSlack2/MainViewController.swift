@@ -25,23 +25,11 @@ import UIKit
 
 class MainViewController: UIViewController, SINCallClientDelegate {
     
-    @IBOutlet var destination: UITextField!
-    @IBOutlet var callButton: UIButton!
-    
-    func client() -> SINClient {
-        var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        return appDelegate.client!
-    }
-    
-    @IBAction func call(sender: AnyObject) {
-        if !destination.text.isEmpty && client().isStarted() {
-            var call: SINCall = client().callClient().callUserWithId(destination.text)
-            performSegueWithIdentifier("callView", sender: call);
-        }
-    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        var callViewController: CallViewController = segue.destinationViewController as! CallViewController;
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var callViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Gamma") as! CallViewController
+        //var callViewController: CallViewController = segue.destinationViewController as! CallViewController;
         var call = sender as! SINCall
         callViewController.call = call
         call.delegate = callViewController
@@ -49,15 +37,27 @@ class MainViewController: UIViewController, SINCallClientDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        destination!.becomeFirstResponder()
+        
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var callViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Gamma") as! CallViewController
+
+        var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.createSinchClient("svshenoy")
+        
+        appDelegate.client!.callClient().delegate = self
+        
+        while !appDelegate.client!.isStarted(){
+            
+            
+        }
+        
+        var call: SINCall = appDelegate.client!.callClient().callUserWithId("alahmed")
+        performSegueWithIdentifier("callView", sender: call);
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    override func awakeFromNib() {
-        client().callClient().delegate = self
     }
     
     func client(client: SINCallClient!, didReceiveIncomingCall call: SINCall!) {

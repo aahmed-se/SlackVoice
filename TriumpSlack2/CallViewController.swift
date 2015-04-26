@@ -41,6 +41,7 @@ class CallViewController: UIViewController, SINCallDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let dir = call!.direction
         if dir == SINCallDirection.Incoming {
             setCallStatusText("")
